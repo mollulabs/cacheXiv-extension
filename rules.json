@@ -5,7 +5,7 @@
       "action": {
         "type": "redirect",
         "redirect": {
-          "regexSubstitution": "http://cachexiv.quk.one/download?id=\\1"
+          "regexSubstitution": "http://cachexiv.mollu.space/download?id=\\1"
         }
       },
       "condition": {
