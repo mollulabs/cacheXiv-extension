@@ -6,12 +6,19 @@
     "icons": {
         "32": "assets/icon-32.png"
     },
-    "content_scripts": [
-        {
-            "js": ["scripts/content.js"],
-            "matches": [
-                "*://arxiv.org/pdf/*"
-            ]
-        }
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "cacheXiv",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "host_permissions": [
+        "*://*.arxiv.org/*"
     ]
 }

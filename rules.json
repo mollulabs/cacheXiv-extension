@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "regexSubstitution": "http://cachexiv.quk.one/download?id=\\1"
+        }
+      },
+      "condition": {
+        "regexFilter": "^https://arxiv.org/pdf/(.*).pdf",
+        "resourceTypes": [
+          "main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"
+        ]
+      }
+    }
+  ]
+  
