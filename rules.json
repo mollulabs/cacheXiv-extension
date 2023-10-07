@@ -9,7 +9,7 @@
         }
       },
       "condition": {
-        "regexFilter": "^https:\/\/(.*\.)?arxiv\.org\/pdf\/(.*).pdf",
+        "regexFilter": "^https:\\/\\/(.*\\.)?arxiv\\.org\\/pdf\\/(.*).pdf",
         "resourceTypes": [
           "main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"
         ]
