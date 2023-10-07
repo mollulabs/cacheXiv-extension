@@ -9,6 +9,22 @@
         }
       },
       "condition": {
+        "regexFilter": "^https://arxiv.org/pdf/(.*).pdf",
+        "resourceTypes": [
+          "main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"
+        ]
+      }
+    }
+    {
+      "id": 2,
+      "priority": 2,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "regexSubstitution": "http://cachexiv.mollu.space/download?id=\\1"
+        }
+      },
+      "condition": {
         "regexFilter": "^https://browse.arxiv.org/pdf/(.*).pdf",
         "resourceTypes": [
           "main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"
